@@ -12,7 +12,7 @@ body {
 }
 
 header {
-  position: fixed;
+  position: relative;
   right: 0;
   top: 0;
   z-index: 1000;
@@ -20,12 +20,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 33px 9%;
+  padding: 20px 5%;
   background: transparent;
 }
 
 .logo {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 700;
   color: white;
 }
@@ -35,10 +35,10 @@ header {
 }
 
 .navlist a {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 400;
   color: white;
-  margin-left: 60px;
+  margin-left: 20px;
   border-bottom: 2px solid transparent;
   transition: all .55s ease;
 }
@@ -49,7 +49,7 @@ header {
 
 #menu-icon {
   color: white;
-  font-size: 35px;
+  font-size: 30px;
   z-index: 10001;
   cursor: pointer;
   display: none;
@@ -61,40 +61,40 @@ header {
   min-height: 100vh;
   position: relative;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   align-items: center;
   gap: 2rem;
 }
 
 .kata-kata h1 {
-  font-size: 70px;
+  font-size: 36px;
   font-weight: 800;
   color: white;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .kata-kata h2 {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 800;
 }
 
 .kata-kata p {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 400;
   color: white;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .kata-kata a {
-  margin-left: 10px;
-  width: 40%;
+  margin-left: 0px;
+  width: 60%;
   display: inline-block;
   color: white;
   background: black;
   border: 1px solid transparent;
   padding: 10px;
   line-height: 1.4;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 400;
   border-radius: 10px;
   text-transform: uppercase;
@@ -115,7 +115,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   opacity: 0.8;
   background-image: url('img/test.png');
   background-size: cover;
@@ -132,32 +132,20 @@ header {
 }
 
 section {
-  padding: 0 20%;
+  padding: 0 5%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .icon {
   position: absolute;
-  top: 50%;
-  padding: 0 10%;
+  top: 90%;
+  padding: 0 5%;
   transform: translateY(-50%);
+  display: flex;
 }
 
 .icon i {
   display: block;
-  margin: 26px 0;
+  margin: 20px 10px; /* Tambahkan jarak kiri dan kanan di sini */
   font-size: 24px;
   color: white;
   transition: all .50s ease;
@@ -169,13 +157,6 @@ section {
   transform: translateY(-20%);
 }
 
-
-
-
-
-
-
-
 .about {
   position: relative;
   z-index: 1;
@@ -185,37 +166,21 @@ section {
 }
 
 .about .about-container {
-  padding-right: 10%;
-  padding-left: 10%;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 .about h1 {
-  font-size: 36px;
+  font-size: 24px;
   color: black;
   margin-bottom: 20px;
 }
 
 .about p {
-  font-size: 18px;
+  font-size: 16px;
   color: black;
   line-height: 1.6;
 }
-
-@media only screen and (min-width: 992px) and (max-width: 1199px),
-only screen and (min-width: 768px) and (max-width: 991px),
-only screen and (max-width: 767px) {
-  .about .about-container {
-    padding-right: 5%;
-    padding-left: 5%;
-  }
-}
-
-
-
-
-
-
-
 
 .dokumentasi {
   position: relative;
@@ -226,17 +191,8 @@ only screen and (max-width: 767px) {
 }
 
 .dokumentasi .dokumentasi-container {
-  padding-right: 10%;
-  padding-left: 10%;
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px),
-only screen and (min-width: 768px) and (max-width: 991px),
-only screen and (max-width: 767px) {
-  .dokumentasi .dokumentasi-container {
-    padding-right: 5%;
-    padding-left: 5%;
-  }
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 .single-dokumentasi {
@@ -248,48 +204,63 @@ only screen and (max-width: 767px) {
 }
 
 .single-dokumentasi img {
-  width: 40%;
+  width: 50%;
   display: block;
-  margin: 0 auto; /* Centering the image */
+  margin: 0 auto;
   transition-duration: 500ms;
 }
 
-
-
-
-
-
-
-
-.footer{
+.footer {
   background: white;
   padding: 50px 20px;
   margin-top: 0px;
 }
 
-.footer-teks{
+.footer-teks {
   font-size: 15px;
   color: black;
   text-align: center;
 }
 
-@media (max-aspect-ratio: 21/9) {
-  header {
-      padding: 15px 3%;
-      transition: .2s;
+@media only screen and (min-width: 768px) {
+  .kata {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .icon {
-      padding: 0 3%;
-      transition: .2s;
+  
+  .kata-kata h1 {
+    font-size: 48px;
+  }
+
+  .kata-kata p {
+    font-size: 16px;
+  }
+
+  .kata-kata a {
+    width: 40%;
   }
 }
 
+@media (max-width: 767px) {
+  /* .navlist {
+    display: none;
+  } */
 
+  #menu-icon {
+    display: none;
+  }
+  
+  .kata-kata h1 {
+    font-size: 32px;
+  }
 
+  .kata-kata p {
+    font-size: 14px;
+  }
 
-
-
-
+  .kata-kata a {
+    width: 60%;
+  }
+}
 
 .red { color: red; }
 .blue { color: blue; }
