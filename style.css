@@ -7,6 +7,7 @@
   text-decoration: none;
 }
 
+
 header{
   position: fixed;
   right: 0;
@@ -20,8 +21,86 @@ header{
   background: transparent;
 }
 
+
+body{
+  background: #ff0000 ;
+}
+
+
 .logo{
   font-size: 30px;
   font-weight: 700;
   color: white;
 }
+.navlist{
+  display: flex;
+}
+.navlist a{
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+  margin-left: 60px;
+  border-bottom: 2px solid transparent;
+  transition: all .55s ease;
+}
+.navlist a :hover{
+  border-bottom: 2px solid white;
+}
+#menu-icon{
+  color: white;
+  font-size: 35px;
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+}
+
+
+.kata{
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background: #ff0000;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+.kata-kata h1{
+  font-size: 70px;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 40px;
+}
+.kata-kata p{
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 40px;
+}
+.kata-kata a {
+  margin-left: 10px;
+  width: 40%;
+  display: inline-block;
+  color: white;
+  background: black;
+  border: 1px solid transparent;
+  padding: 10px;
+  line-height: 1.4;
+  font-size: 10px;
+  font-weight: 400;
+  border-radius: 15px;
+  text-transform: uppercase;
+  transition: all .55s ease;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.kata-kata a:hover{
+  background: transparent;
+  border: 1px solid white;
+  transform: translateX(8px);
+}
+
+section{
+  padding: 0 10%;}
