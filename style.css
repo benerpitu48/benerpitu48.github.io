@@ -1,4 +1,4 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -7,8 +7,11 @@
   text-decoration: none;
 }
 
+body {
+  background: #ff0000;
+}
 
-header{
+header {
   position: fixed;
   right: 0;
   top: 0;
@@ -21,21 +24,17 @@ header{
   background: transparent;
 }
 
-
-body{
-  background: #ff0000 ;
-}
-
-
-.logo{
+.logo {
   font-size: 30px;
   font-weight: 700;
   color: white;
 }
-.navlist{
+
+.navlist {
   display: flex;
 }
-.navlist a{
+
+.navlist a {
   font-size: 15px;
   font-weight: 400;
   color: white;
@@ -43,10 +42,12 @@ body{
   border-bottom: 2px solid transparent;
   transition: all .55s ease;
 }
-.navlist a :hover{
+
+.navlist a:hover {
   border-bottom: 2px solid white;
 }
-#menu-icon{
+
+#menu-icon {
   color: white;
   font-size: 35px;
   z-index: 10001;
@@ -54,31 +55,36 @@ body{
   display: none;
 }
 
-
-.kata{
+.kata {
   height: 100%;
   width: 100%;
   min-height: 100vh;
-  
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 2rem;
 }
+
 .kata-kata h1 {
-  
   font-size: 70px;
   font-weight: 800;
   color: white;
   margin-bottom: 40px;
 }
-.kata-kata p{
+
+.kata-kata h2 {
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.kata-kata p {
   font-size: 15px;
   font-weight: 400;
   color: white;
   margin-bottom: 40px;
 }
+
 .kata-kata a {
   margin-left: 10px;
   width: 40%;
@@ -90,31 +96,34 @@ body{
   line-height: 1.4;
   font-size: 10px;
   font-weight: 400;
-  border-radius: 15px;
+  border-radius: 10px;
   text-transform: uppercase;
   transition: all .55s ease;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
-.kata-kata a:hover{
+
+.kata-kata a:hover {
   background: transparent;
   border: 1px solid white;
   transform: translateX(8px);
 }
 
-.kata-bg{
+.kata-bg {
   position: fixed;
-  top: 30%;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  opacity: 0.8;
   background-image: url('img/test.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  transform: translateY(-50%);
   z-index: -1;
 }
+
 .container {
   height: 100%;
   display: flex;
@@ -122,38 +131,173 @@ body{
   justify-content: center;
 }
 
-section{
-  padding: 0 20%;}
+section {
+  padding: 0 20%;
+}
 
 
 
-.icon{
+
+
+
+
+
+
+
+
+
+
+
+.icon {
   position: absolute;
   top: 50%;
   padding: 0 10%;
   transform: translateY(-50%);
 }
-.icon i{
+
+.icon i {
   display: block;
   margin: 26px 0;
   font-size: 24px;
   color: white;
   transition: all .50s ease;
 }
-.icon i:hover{
+
+.icon i:hover {
   background: transparent;
   color: grey;
   transform: translateY(-20%);
 }
 
 
-@media (max-aspect-ratio: 21/9) {
-  header{
-    padding: 15px 3%;
-    transition: .2s;
-  }
-  .icon{
-    padding: 0 3%;
-    transition: .2s;
+
+
+
+
+
+
+.about {
+  position: relative;
+  z-index: 1;
+  background: white;
+  padding: 50px 20px;
+  margin-top: 0px;
+}
+
+.about .about-container {
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.about h1 {
+  font-size: 36px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+  color: black;
+  line-height: 1.6;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+only screen and (min-width: 768px) and (max-width: 991px),
+only screen and (max-width: 767px) {
+  .about .about-container {
+    padding-right: 5%;
+    padding-left: 5%;
   }
 }
+
+
+
+
+
+
+
+
+.dokumentasi {
+  position: relative;
+  z-index: 1;
+  background: white;
+  padding: 50px 20px;
+  margin-top: 0px;
+}
+
+.dokumentasi .dokumentasi-container {
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+only screen and (min-width: 768px) and (max-width: 991px),
+only screen and (max-width: 767px) {
+  .dokumentasi .dokumentasi-container {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+}
+
+.single-dokumentasi {
+  margin-top: 30px;
+  position: relative;
+  z-index: 1;
+  transition-duration: 500ms;
+  overflow: hidden;
+}
+
+.single-dokumentasi img {
+  width: 40%;
+  display: block;
+  margin: 0 auto; /* Centering the image */
+  transition-duration: 500ms;
+}
+
+
+
+
+
+
+
+
+.footer{
+  background: white;
+  padding: 50px 20px;
+  margin-top: 0px;
+}
+
+.footer-teks{
+  font-size: 15px;
+  color: black;
+  text-align: center;
+}
+
+@media (max-aspect-ratio: 21/9) {
+  header {
+      padding: 15px 3%;
+      transition: .2s;
+  }
+  .icon {
+      padding: 0 3%;
+      transition: .2s;
+  }
+}
+
+
+
+
+
+
+
+
+.red { color: red; }
+.blue { color: blue; }
+.green { color: green; }
+.yellow { color: yellow; }
+.purple { color: purple; }
+.orange { color: orange; }
+.pink { color: pink; }
+.cyan { color: cyan; }
+.magenta { color: magenta; }
+.white { color: white; }
