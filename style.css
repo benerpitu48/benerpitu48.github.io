@@ -59,14 +59,15 @@ body{
   height: 100%;
   width: 100%;
   min-height: 100vh;
-  background: #ff0000;
+  
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 2rem;
 }
-.kata-kata h1{
+.kata-kata h1 {
+  
   font-size: 70px;
   font-weight: 800;
   color: white;
@@ -100,6 +101,29 @@ body{
   background: transparent;
   border: 1px solid white;
   transform: translateX(8px);
+}
+
+.kata-bg {
+  position: fixed;
+  top: 30%; /* Menempatkan elemen di tengah vertikal */
+  width: 100%;
+  height: 100%;
+  background-image: url('img/test.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transform: translateY(-50%); /* Koreksi posisi agar elemen tetap di tengah vertikal */
+  z-index: -1; /* Menempatkan elemen di belakang */
+}
+
+
+
+
+.container {
+  height: 100%; /* Mengatur tinggi container agar sesuai dengan elemen induk */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 section{
